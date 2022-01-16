@@ -279,7 +279,7 @@ static HMODULE FindModule(HANDLE _Process, const std::string& _Module) {
 
 }
 
-extern "C" FARPROC __stdcall GetProcAddressEx(HANDLE _Process, HMODULE _Module, LPCSTR _Name) {
+FARPROC __cdecl GetProcAddressEx(HANDLE _Process, HMODULE _Module, LPCSTR _Name) {
 	
 	const UINT_PTR base = reinterpret_cast<UINT_PTR>(_Module);
 
@@ -403,7 +403,7 @@ extern "C" FARPROC __stdcall GetProcAddressEx(HANDLE _Process, HMODULE _Module, 
 
 }
 
-extern "C" FARPROC __stdcall GetProcAddressByNameEx(HANDLE _Process, LPCSTR _Module, LPCSTR _Name) {
+FARPROC __cdecl GetProcAddressEx(HANDLE _Process, LPCSTR _Module, LPCSTR _Name) {
 
 	HMODULE module_handle = FindModule(_Process, _Module);
 

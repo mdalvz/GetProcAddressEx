@@ -47,7 +47,7 @@ int main(int argc, char** argv) {
     if (!process)
         return -2;
     
-    FARPROC address = GetProcAddressByNameEx(process, argv[2], argv[3]);
+    FARPROC address = GetProcAddressEx(process, argv[2], argv[3]);
 
     if (!address) {
 
