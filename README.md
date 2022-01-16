@@ -8,7 +8,7 @@ Process memory reads are cached by default, although a non-cached reader include
 
 1. Clone the repository
 2. Compile the source with CMake
-3. Run the Test binary (Test.exe on Windows)
+3. Run Test.exe
 
 ## Example Output
 
