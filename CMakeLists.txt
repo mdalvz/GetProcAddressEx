@@ -8,6 +8,6 @@ add_library(GetProcAddressEx STATIC src/GetProcAddressEx.cpp)
 
 target_include_directories(GetProcAddressEx PUBLIC include)
 
-add_executable(Test src/Main.cpp)
+add_executable(GetProcAddressExTest src/Main.cpp)
 
-target_link_libraries(Test PRIVATE GetProcAddressEx)
+target_link_libraries(GetProcAddressExTest PRIVATE GetProcAddressEx)
